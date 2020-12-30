@@ -50,7 +50,7 @@ namespace VTYS_Proje
             NpgsqlCommand komutekle = new NpgsqlCommand(srg2,baglanti);
             komutekle.Parameters.AddWithValue("@p1", int.Parse(Txt_KatID.Text));
             komutekle.Parameters.AddWithValue("@p2", Txt_KatAd.Text);
-            komutekle.ExecuteNonQuery();
+            komutekle.ExecuteNonQuery(); 
             baglanti.Close();
             MessageBox.Show("Kategori Eklendi !!!");
         }
